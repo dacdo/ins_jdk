@@ -7,6 +7,6 @@ class JavaJre < Inspec.resource(1)
     end
   "
   def installed?
-    inspec.command('java -version').stderr.include?('Java(TM) SE Runtime Environment')
+    inspec.command('java -version').stderr.include?('Runtime Environment')
   end
 end
