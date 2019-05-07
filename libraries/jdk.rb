@@ -10,6 +10,6 @@ class OracleJdk < Inspec.resource(1)
     end
   "
   def installed?
-    inspec.command('java -version').stderr.include?('Oracle')
+    inspec.command('java -version').stderr.include?('Java(TM) SE Runtime Environment')
   end
 end
